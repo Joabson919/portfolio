@@ -1,10 +1,8 @@
 <template>
   <v-app dark>
     <navegacao />
-    <v-main>
-      <v-container>
-        <nuxt />
-      </v-container>
+    <v-main class="pt-0">
+      <nuxt />
     </v-main>
     <!-- <v-navigation-drawer
       v-model="rightDrawer"
@@ -23,9 +21,6 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer> -->
-    <v-footer fixed app class="justify-center">
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
   </v-app>
 </template>
 

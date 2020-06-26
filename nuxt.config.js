@@ -25,8 +25,7 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+  css: ["~/assets/main.css"],
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
@@ -68,9 +67,6 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
-          eerie: "#242424",
-          jet: "#303030",
-          onyx: "414141"
         }
       }
     }

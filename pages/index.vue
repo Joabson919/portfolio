@@ -1,37 +1,34 @@
 <template>
-  <v-row align="center" justify="center">
-    <v-col sm="8" md="6">
-      <v-card>
-        <v-card-title class="headline">
-          Início
-        </v-card-title>
-        <v-card-text>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi,
-            minima? Possimus repudiandae molestias, quis facere eaque quibusdam
-            officiis natus expedita nam laboriosam quo aut similique accusamus
-            reprehenderit a voluptatibus odio.
-          </p>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire">
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+  <section class="hero">
+    <v-container>
+      <v-row align="center">
+        <v-col class="text-left">
+          <h1 class="text-xl-h3 text-h4 font-weight-light">Calango WEB</h1>
+          <h1 class="text-xl-h1 text-h3 font-weight-regular red--text">Desenvolvedor WEB</h1>
+          <v-btn outlined rounded class="mt-4" to="/sobre">Vamos lá <v-icon>mdi-arrow-right</v-icon></v-btn>
+        </v-col>
+      </v-row>
+    </v-container>
+  </section>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+<style>
+.hero {
+  background-image: url('~@/static/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
 
+.hero .row,
+.hero .container {
+  height: 100%;
+}
+</style>
+
+<script>
 export default {
-  components: {
-    Logo,
-    VuetifyLogo,
-  },
+  components: {},
 }
 </script>

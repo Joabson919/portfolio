@@ -2,13 +2,13 @@
   <div>
     <v-navigation-drawer v-model="drawer" fixed app>
       <v-list class="text-center">
-        <v-list-item>
-          <v-list-item-content>
-            <v-list-item-title>Logo</v-list-item-title>
-          </v-list-item-content>
+        <v-list-item class="justify-center">
+          <v-list-item-icon>
+            <v-img src="logo.png" max-width="100"></v-img>
+          </v-list-item-icon>
         </v-list-item>
       </v-list>
-      <hr />
+      <v-divider />
       <v-list>
         <v-list-item
           v-for="(item, i) in items"
@@ -45,9 +45,9 @@
         </v-row>
       </template>
     </v-navigation-drawer>
-    <v-app-bar clipped-left fixed app>
+    <v-app-bar clipped-left fixed app color="transparent" flat>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" v-if="!drawer" />
-      <v-toolbar-title v-text="title" />
+      <!-- <v-toolbar-title v-text="title" /> -->
       <v-spacer />
       <!-- <v-btn
         icon
